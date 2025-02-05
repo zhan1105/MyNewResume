@@ -11,7 +11,7 @@ class ContactAlert: MyViewController {
     
     private let phoneButton = MyPackageButton()
     private let lineButton = MyPackageButton()
-    private let facebaookButton = MyPackageButton()
+    private let githubButton = MyPackageButton()
     private let figmaButton = MyPackageButton()
     
     private let contactStack = MyStack()
@@ -63,15 +63,15 @@ extension ContactAlert {
         lineButton.viewPadding(to: width * 0.01, left: width * 0.005, right: width * 0.005)
         lineButton.buttonAction = { [weak self] in self?.contactButtonAction(type: .Line) }
 
-        facebaookButton.buttonImage = .githubIcon
-        facebaookButton.viewPadding(to: width * 0.01, left: width * 0.005, right: width * 0.005)
-        facebaookButton.buttonAction = { [weak self] in self?.contactButtonAction(type: .Github) }
+        githubButton.buttonImage = .githubIcon
+        githubButton.viewPadding(to: width * 0.055, left: width * 0.0225, right: width * 0.0225)
+        githubButton.buttonAction = { [weak self] in self?.contactButtonAction(type: .Github) }
 
         figmaButton.buttonImage = .figma
         figmaButton.viewPadding(to: width * 0.04, left: width * 0.005, right: width * 0.025)
         figmaButton.buttonAction = { [weak self] in self?.contactButtonAction(type: .Figma) }
 
-        contactStack.addArrangedSubviews([phoneButton, lineButton, facebaookButton, figmaButton])
+        contactStack.addArrangedSubviews([phoneButton, lineButton, githubButton, figmaButton])
         contactStack.axis = .horizontal
         contactStack.distribution = .fillEqually
         contactStack.translatesAutoresizingMaskIntoConstraints = false
