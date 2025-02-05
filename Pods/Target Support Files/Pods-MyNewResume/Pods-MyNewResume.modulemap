@@ -1,0 +1,6 @@
+framework module Pods_MyNewResume {
+  umbrella header "Pods-MyNewResume-umbrella.h"
+
+  export *
+  module * { export * }
+}
