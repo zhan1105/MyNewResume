@@ -28,7 +28,7 @@ class ContactAlert: MyViewController {
         case .Line:
             link = "https://line.me/ti/p/j5lKytr_xG"
         case .Github:
-            link = "https://www.facebook.com/share/1A6yLCaoUS/?mibextid=wwXIfr"
+            link = "https://github.com/zhan1105/MyNewResume"
         case .Figma:
             link = "https://www.figma.com/board/WTID8WVJTGrjdTWJlDFhf7/Untitled?node-id=903-954&t=RXpets6dhg4LfVQR-0"
         }
