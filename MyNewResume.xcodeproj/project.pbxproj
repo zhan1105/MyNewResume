@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F3D81BA2D535BCA00AE6F2C /* SkillsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F3D81B92D535BCA00AE6F2C /* SkillsType.swift */; };
 		7F57586F2D51A015006FD19E /* ContactInfoUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F57586E2D51A015006FD19E /* ContactInfoUI.swift */; };
 		7F5758712D51A223006FD19E /* HomeUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5758702D51A223006FD19E /* HomeUI.swift */; };
 		7F5758762D51B8E1006FD19E /* MySkillsUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F5758752D51B8E1006FD19E /* MySkillsUI.swift */; };
@@ -80,6 +81,7 @@
 /* Begin PBXFileReference section */
 		2BB2891C229EF5B40F1BFDF7 /* Pods-MyNewResume.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNewResume.release.xcconfig"; path = "Target Support Files/Pods-MyNewResume/Pods-MyNewResume.release.xcconfig"; sourceTree = "<group>"; };
 		4FF317794E2D44C4C2881A79 /* Pods-MyNewResume.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyNewResume.debug.xcconfig"; path = "Target Support Files/Pods-MyNewResume/Pods-MyNewResume.debug.xcconfig"; sourceTree = "<group>"; };
+		7F3D81B92D535BCA00AE6F2C /* SkillsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsType.swift; sourceTree = "<group>"; };
 		7F57586E2D51A015006FD19E /* ContactInfoUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoUI.swift; sourceTree = "<group>"; };
 		7F5758702D51A223006FD19E /* HomeUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUI.swift; sourceTree = "<group>"; };
 		7F5758752D51B8E1006FD19E /* MySkillsUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySkillsUI.swift; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		7F5758812D51EE7A006FD19E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F3D81B92D535BCA00AE6F2C /* SkillsType.swift */,
 				7F5758822D51EEED006FD19E /* ExperienceItem.swift */,
 			);
 			path = Model;
@@ -684,6 +687,7 @@
 				7F5758712D51A223006FD19E /* HomeUI.swift in Sources */,
 				7F5758782D51BDF7006FD19E /* SkillsItemUI.swift in Sources */,
 				7F57586F2D51A015006FD19E /* ContactInfoUI.swift in Sources */,
+				7F3D81BA2D535BCA00AE6F2C /* SkillsType.swift in Sources */,
 				7FD7376A2D509DB8005B655D /* MyResumeUI.swift in Sources */,
 				7FD737432D507939005B655D /* MyTextField.swift in Sources */,
 				7FD737462D507939005B655D /* ImageNameItem.swift in Sources */,

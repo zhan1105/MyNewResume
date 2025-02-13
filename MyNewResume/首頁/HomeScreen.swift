@@ -37,6 +37,18 @@ extension HomeScreen {
             self.overlayAlert(ContactAlert())
         }
         
+        contentView.onTapAction_Skills(.Swift) { [weak self] in
+            guard let self = self else { return }
+        }
+        
+        contentView.onTapAction_Skills(.SwiftUI) { [weak self] in
+            guard let self = self else { return }
+        }
+        
+        contentView.onTapAction_Skills(.ObjectiveC) { [weak self] in
+            guard let self = self else { return }
+        }
+        
         let appScreen = MyStack(arrangedSubviews: [scrollView])
         appScreen.translatesAutoresizingMaskIntoConstraints = false
         

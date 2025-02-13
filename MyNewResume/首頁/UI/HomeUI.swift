@@ -28,6 +28,10 @@ class HomeUI: UIView {
         experience.reloadExperienceTable()
     }
     
+    func onTapAction_Skills(_ type: SkillsType, onTapAction: (() -> Void)?) {
+        mySkills.onTapAction_Skills(type: type, onTapAction: onTapAction)
+    }
+    
     init(width: CGFloat, height: CGFloat){
         super.init(frame: .zero)
         setupUI(width: width, height: height)

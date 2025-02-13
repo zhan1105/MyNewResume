@@ -11,11 +11,22 @@ class MySkillsUI: UIView {
 
     private let titleLabel = MyLabel()
     
-    private let skills01 = SkillsItemUI()
-    private let skills02 = SkillsItemUI()
-    private let skills03 = SkillsItemUI()
+    private let skills_Swift = SkillsItemUI()
+    private let skills_SwiftUI = SkillsItemUI()
+    private let skills_ObjectiveC = SkillsItemUI()
     
     private let skillsStack = MyStack()
+    
+    func onTapAction_Skills(type: SkillsType, onTapAction: (() -> Void)?) {
+        switch type {
+        case .Swift:
+            skills_Swift.onTapAction = onTapAction
+        case .SwiftUI:
+            skills_SwiftUI.onTapAction = onTapAction
+        case .ObjectiveC:
+            skills_ObjectiveC.onTapAction = onTapAction
+        }
+    }
     
     init(){
         super.init(frame: .zero)
@@ -34,16 +45,16 @@ class MySkillsUI: UIView {
         titleLabel.font = .boldTitle2
         titleLabel.textAlignment = .left
         
-        skills01.setImage = .swift
-        skills01.setSkills = "Swift"
+        skills_Swift.setImage = .swift
+        skills_Swift.setSkills = "Swift"
         
-        skills02.setImage = .swiftui
-        skills02.setSkills = "SwiftUI"
+        skills_SwiftUI.setImage = .swiftui
+        skills_SwiftUI.setSkills = "SwiftUI"
         
-        skills03.setImage = .objectiveC
-        skills03.setSkills = "Objective-C"
+        skills_ObjectiveC.setImage = .objectiveC
+        skills_ObjectiveC.setSkills = "Objective-C"
         
-        skillsStack.addArrangedSubviews([skills01, skills02, skills03])
+        skillsStack.addArrangedSubviews([skills_Swift, skills_SwiftUI, skills_ObjectiveC])
         skillsStack.axis = .horizontal
         skillsStack.distribution = .fillEqually
         skillsStack.translatesAutoresizingMaskIntoConstraints = false
